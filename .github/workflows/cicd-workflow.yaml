@@ -81,10 +81,10 @@ jobs:
             ${{ secrets.OCI_API_KEY }}
           verbose: true
 
-      - name: 'Fix Config File Permissions'
-        run: |
-          oci setup repair-file-permissions --file /home/runner/.oci/config
-          oci setup repair-file-permissions --file /home/runner/.oci/key.pem
+      #- name: 'Fix Config File Permissions'
+      #  run: |
+      #    oci setup repair-file-permissions --file /home/runner/.oci/config
+      #    oci setup repair-file-permissions --file /home/runner/.oci/key.pem
 
       - name: 'Check Existing Instance'
         run: |
