@@ -20,6 +20,7 @@ class HelloControllerSpec extends AbstractSpec {
     @Shared @AutoCleanup @Inject @Client("/")
     HttpClient client
 
+    //Validando teste de ci cd
     void "test index"() {
         given:
         HttpResponse response = client.toBlocking().exchange("/hello")
