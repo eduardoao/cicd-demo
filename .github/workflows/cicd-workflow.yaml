@@ -80,6 +80,10 @@ jobs:
           api_key: |
             ${{ secrets.OCI_API_KEY }}
           verbose: true
+          
+      - run: cat ~/.oci/config
+
+      - run: oci -v
 
       #- name: 'Fix Config File Permissions'
       #  run: |
